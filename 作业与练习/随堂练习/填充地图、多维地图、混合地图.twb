@@ -1,0 +1,1420 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0613.1930                               -->
+<workbook original-version='18.1' source-build='2024.2.0 (20242.24.0613.1930)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='示例数据 (2014年各省市售电量)' inline='true' name='federated.0b1qrvc0rkd7yb17iqzj2118hzd6' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='2014年各省市售电量' name='excel-direct.0ybyntz1m09z0u11yr93f0cwcm61'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='C:/Users/holyyy/Desktop/数据分析/tableau学习/2014年各省市售电量.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.0ybyntz1m09z0u11yr93f0cwcm61' name='示例数据' table='[示例数据$]' type='table'>
+          <columns gridOrigin='A1:I7424:no:A1:I7424:0' header='yes' outcome='2'>
+            <column datatype='string' name='省市' ordinal='0' />
+            <column datatype='string' name='地市' ordinal='1' />
+            <column datatype='date' name='统计周期' ordinal='2' />
+            <column datatype='string' name='用电类别' ordinal='3' />
+            <column datatype='real' name='当期值' ordinal='4' />
+            <column datatype='real' name='累计值' ordinal='5' />
+            <column datatype='real' name='同期值' ordinal='6' />
+            <column datatype='real' name='同期累计值' ordinal='7' />
+            <column datatype='real' name='月度计划值' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.0ybyntz1m09z0u11yr93f0cwcm61' name='示例数据' table='[示例数据$]' type='table'>
+          <columns gridOrigin='A1:I7424:no:A1:I7424:0' header='yes' outcome='2'>
+            <column datatype='string' name='省市' ordinal='0' />
+            <column datatype='string' name='地市' ordinal='1' />
+            <column datatype='date' name='统计周期' ordinal='2' />
+            <column datatype='string' name='用电类别' ordinal='3' />
+            <column datatype='real' name='当期值' ordinal='4' />
+            <column datatype='real' name='累计值' ordinal='5' />
+            <column datatype='real' name='同期值' ordinal='6' />
+            <column datatype='real' name='同期累计值' ordinal='7' />
+            <column datatype='real' name='月度计划值' ordinal='8' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:I7424:no:A1:I7424:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>2</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>省市</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[省市]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>省市</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_69105479E48742CC8503752DFCCBDCB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>地市</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[地市]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>地市</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_69105479E48742CC8503752DFCCBDCB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>统计周期</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[统计周期]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>统计周期</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;DATE&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_69105479E48742CC8503752DFCCBDCB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>用电类别</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[用电类别]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>用电类别</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LZH_RCN_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_69105479E48742CC8503752DFCCBDCB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>当期值</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[当期值]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>当期值</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_69105479E48742CC8503752DFCCBDCB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>累计值</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[累计值]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>累计值</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_69105479E48742CC8503752DFCCBDCB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>同期值</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[同期值]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>同期值</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_69105479E48742CC8503752DFCCBDCB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>同期累计值</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[同期累计值]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>同期累计值</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_69105479E48742CC8503752DFCCBDCB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>月度计划值</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[月度计划值]</local-name>
+            <parent-name>[示例数据]</parent-name>
+            <remote-alias>月度计划值</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[示例数据_69105479E48742CC8503752DFCCBDCB5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='示例数据' datatype='table' name='[__tableau_internal_object_id__].[示例数据_69105479E48742CC8503752DFCCBDCB5]' role='measure' type='quantitative' />
+      <column datatype='string' name='[地市]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column datatype='string' name='[省市]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <semantic-values semantic-role='[State].[Name]'>
+          <semantic-value key='&quot;冀北&quot;' value='&quot;河北省&quot;' />
+          <semantic-value key='&quot;龙江&quot;' value='&quot;黑龙江省&quot;' />
+          <semantic-value key='&quot;蒙东&quot;' value='&quot;内蒙古&quot;' />
+        </semantic-values>
+      </column>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;中国&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='示例数据' id='示例数据_69105479E48742CC8503752DFCCBDCB5'>
+            <properties context=''>
+              <relation connection='excel-direct.0ybyntz1m09z0u11yr93f0cwcm61' name='示例数据' table='[示例数据$]' type='table'>
+                <columns gridOrigin='A1:I7424:no:A1:I7424:0' header='yes' outcome='2'>
+                  <column datatype='string' name='省市' ordinal='0' />
+                  <column datatype='string' name='地市' ordinal='1' />
+                  <column datatype='date' name='统计周期' ordinal='2' />
+                  <column datatype='string' name='用电类别' ordinal='3' />
+                  <column datatype='real' name='当期值' ordinal='4' />
+                  <column datatype='real' name='累计值' ordinal='5' />
+                  <column datatype='real' name='同期值' ordinal='6' />
+                  <column datatype='real' name='同期累计值' ordinal='7' />
+                  <column datatype='real' name='月度计划值' ordinal='8' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='各省售电量填充地图'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='示例数据 (2014年各省市售电量)' name='federated.0b1qrvc0rkd7yb17iqzj2118hzd6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0b1qrvc0rkd7yb17iqzj2118hzd6'>
+            <column-instance column='[省市]' derivation='None' name='[none:省市:nk]' pivot='key' type='nominal' />
+            <column-instance column='[当期值]' derivation='Sum' name='[sum:当期值:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[当期值]' role='measure' type='quantitative' />
+            <column datatype='string' name='[省市]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;冀北&quot;' value='&quot;河北省&quot;' />
+                <semantic-value key='&quot;龙江&quot;' value='&quot;黑龙江省&quot;' />
+                <semantic-value key='&quot;蒙东&quot;' value='&quot;内蒙古&quot;' />
+              </semantic-values>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Longitude (generated)]' field-type='quantitative' max='15668830.978962706' min='7936341.7380601922' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]' field-type='quantitative' max='6838504.684596912' min='2409084.7326007453' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:当期值:qk]' palette='red_blue_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='annotation'>
+            <format attr='fill-color' id='annotation_0' value='#00000000' />
+            <format attr='fill-color' id='annotation_1' value='#00000000' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='1' />
+            <format attr='map-style' value='light' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:当期值:qk]' />
+              <text column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]' />
+              <lod column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]' />
+              <lod column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]' />
+              <geometry column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]</rows>
+        <cols>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Longitude (generated)]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]</field>
+                  <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:当期值:qk]</field>
+                  <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Geometry (generated)]</field>
+                  <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]</field>
+                  <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;龙江&quot;</value>
+                <value>1247042.6228571427</value>
+                <value>&quot;POLYGON((121.4916 53.3332,121.5808 53.3496,121.6518 53.3725,121.6919 53.3916,121.743 53.3875,121.8139 53.4141,121.86 53.4242,121.9009 53.4214,121.9594 53.4286,122.0511 53.4207,122.1015 53.425,122.1526 53.4667,122.25 53.4634,122.2944 53.482,122.3119 53.4967,122.3501 53.498,122.3682 53.471,122.4302 53.4423,122.4943 53.4565,122.5324 53.45,122.5825 53.4621,122.6534 53.4585,122.7399 53.4622,122.8459 53.4555,122.8878 53.4607,122.944 53.4833,123.0451 53.5034,123.09 53.5048,123.128 53.4974,123.1684 53.5071,123.2246 53.5481,123.2544 53.5588,123.3039 53.5576,123.3801 53.5358,123.4467 53.5343,123.4767 53.4961,123.5015 53.5091,123.4804 53.5276,123.5072 53.5545,123.5384 53.5502,123.5656 53.5058,123.5829 53.5469,123.6246 53.5453,123.6621 53.526,123.6927 53.4954,123.7474 53.4967,123.8003 53.4861,123.8501 53.4877,123.8824 53.4801,123.984 53.4283,124.0225 53.3936,124.0529 53.4014,124.1073 53.3486,124.1242 53.345,124.1674 53.3672,124.2046 53.3768,124.2459 53.3743,124.2595 53.3585,124.3198 53.3308,124.3431 53.2874,124.3744 53.2526,124.4102 53.245,124.4357 53.2151,124.4562 53.2181,124.5089 53.2018,124.6302 53.2072,124.678 53.2012,124.7204 53.1837,124.7067 53.1571,124.7316 53.1444,124.7715 53.1389,124.8345 53.1386,124.854 53.103,124.8879 53.0984,124.9007 53.1173,124.8783 53.1574,124.8838 53.1669,124.974 53.1947,125.0697 53.2023,125.1568 53.2017,125.1949 53.1947,125.254 53.174,125.2868 53.1525,125.3866 53.1282,125.4977 53.0909,125.4992 53.0539,125.5257 53.0513,125.5917 53.0815,125.6207 53.0733,125.6362 53.0374,125.6888 53.0006,125.7164 52.9968,125.7436 52.9806,125.7218 52.9628,125.7164 52.9336,125.6753 52.9256,125.654 52.9109,125.6572 52.8689,125.6905 52.855,125.7127 52.867,125.7373 52.8639,125.7975 52.8933,125.8453 52.8907,125.8451 52.8686,125.9142 52.8145,125.9324 52.7809,125.963 52.7592,125.983 52.7586,126.0107 52.7933,126.0499 52.7957,126.0978 52.7749,126.1059 52.7564,126.0562 52.7501,126.0366 52.7384,126.0623 52.7023,126.0577 52.6771,125.9838 52.6728,125.9612 52.6456,125.9644 52.6206,126.0119 52.5798,126.0432 52.5778,126.0626 52.6035,126.15 52.5657,126.1975 52.5346,126.183 52.4735,126.1994 52.4649,126.257 52.4751,126.3272 52.4147,126.348 52.3833,126.3431 52.3584,126.312 52.3392,126.337 52.3028,126.4195 52.2982,126.3967 52.2795,126.3424 52.2599,126.2966 52.2225,126.3015 52.2045,126.3546 52.1868,126.3987 52.1828,126.4217 52.1705,126.4897 52.1596,126.5551 52.1325,126.5568 52.1171,126.5332 52.0899,126.536 52.0737,126.5037 52.0348,126.4736 52.0402,126.4396 52.0201,126.4616 51.9805,126.4572 51.9437,126.4942 51.9284,126.5096 51.9064,126.5549 51.8644,126.5742 51.824,126.6281 51.769,126.6525 51.7615,126.6704 51.7268,126.711 51.7277,126.7267 51.713,126.7145 51.6771,126.7333 51.6463,126.7267 51.6289,126.6709 51.6003,126.6866 51.5781,126.7169 51.5666,126.797 51.5479,126.8317 51.5245,126.7771 51.4478,126.7845 51.432,126.818 51.4141,126.8814 51.4102,126.9132 51.3911,126.9218 51.3583,126.8961 51.3393,126.8263 51.3417,126.8072 51.312,126.8121 51.2851,126.8366 51.2579,126.8611 51.2458,126.8983 51.244,126.9152 51.2635,126.8846 51.2901,126.8768 51.3197,126.9306 51.3305,126.9762 51.323,126.9708 51.2934,126.9225 51.2477,126.8937 51.1974,126.9147 51.1201,126.9162 51.0619,126.9754 51.029,127.0435 50.9619,127.1128 50.9324,127.1405 50.9048,127.2386 50.7702,127.2782 50.7584,127.3012 50.7379,127.2799 50.708,127.289 50.6636,127.3291 50.6263,127.3646 50.5818,127.3526 50.5422,127.3118 50.5251,127.3059 50.4985,127.2866 50.4728,127.2981 50.4533,127.3453 50.4456,127.361 50.4339,127.3617 50.398,127.3267 50.3572,127.3245 50.3383,127.3646 50.2971,127.3916 50.2834,127.4834 50.2595,127.5913 50.2416,127.606 50.2338,127.6009 50.1826,127.5678 50.1251,127.5206 50.0882,127.4978 50.0571,127.4885 49.9894,127.525 49.9536,127.5416 49.9227,127.5203 49.8464,127.5238 49.8206,127.5526 49.7924,127.5813 49.783,127.6356 49.7777,127.6633 49.7689,127.6719 49.7517,127.6736 49.6888,127.6851 49.67,127.7159 49.6513,127.7573 49.6373,127.8124 49.5854,127.8618 49.5719,127.9069 49.573,127.9475 49.5939,127.9684 49.595,128.0094 49.5773,128.0256 49.5591,128.1036 49.5456,128.1373 49.547,128.1676 49.5366,128.2077 49.5413,128.2515 49.5642,128.2922 49.5607,128.3213 49.5418,128.3507 49.5472,128.3629 49.5772,128.3895 49.59,128.4887 49.5914,128.5453 49.6023,128.6146 49.5887,128.6645 49.5686,128.7073 49.5612,128.7281 49.5868,128.7526 49.593,128.7845 49.5825,128.7962 49.5445,128.7497 49.5129,128.7475 49.4795,128.795 49.4709,128.8442 49.4873,128.8848 49.4865,128.9291 49.4592,128.9867 49.4552,129.0217 49.432,129.0452 49.3805,129.089 49.3543,129.137 49.3556,129.1918 49.3945,129.2322 49.3996,129.2676 49.3877,129.3015 49.3596,129.3396 49.3516,129.3671 49.3569,129.3712 49.4204,129.392 49.4346,129.4273 49.4405,129.489 49.4267,129.5237 49.4133,129.537 49.3939,129.5482 49.3089,129.5595 49.2882,129.5928 49.2751,129.6662 49.2949,129.7019 49.2942,129.7401 49.2674,129.7472 49.21,129.7808 49.1763,129.8469 49.1753,129.8581 49.1525,129.8437 49.1231,129.8613 49.1068,129.9186 49.0966,129.9257 49.0723,129.9085 49.049,129.9205 49.0361,130.0077 49.0168,130.051 48.9717,130.1027 48.9529,130.2111 48.8876,130.2385 48.8608,130.2924 48.8683,130.3276 48.882,130.4307 48.9053,130.4669 48.898,130.4939 48.8614,130.5389 48.8534,130.5947 48.875,130.6319 48.8815,130.6632 48.8792,130.6833 48.8629,130.6745 48.8413,130.6388 48.8143,130.616 48.7875,130.5646 48.6887,130.5259 48.6264,130.5352 48.6041,130.5896 48.5963,130.6077 48.5702,130.6121 48.4966,130.6273 48.4875,130.6679 48.4917,130.7125 48.5108,130.7335 48.5121,130.7643 48.4872,130.7315 48.4456,130.7702 48.3526,130.8096 48.3433,130.8345 48.3025,130.8009 48.2614,130.7734 48.2544,130.7511 48.2188,130.7516 48.1847,130.7312 48.1763,130.6673 48.1302,130.6549 48.1055,130.6757 48.0822,130.6888 48.0417,130.7249 48.0316,130.743 48.005,130.8638 47.9352,130.9072 47.8886,130.9513 47.8243,130.9505 47.7422,130.9735 47.7064,131.0192 47.689,131.0912 47.6842,131.164 47.6948,131.2232 47.7262,131.2551 47.7342,131.3784 47.7277,131.413 47.7398,131.4544 47.7428,131.5209 47.7357,131.5515 47.7232,131.5575 47.678,131.5739 47.663,131.6194 47.6569,131.6526 47.6729,131.6829 47.7057,131.7324 47.7038,131.7769 47.6792,131.8515 47.6747,131.9038 47.6861,131.9293 47.6662,131.9796 47.6693,131.9885 47.7005,132.0042 47.7119,132.0644 47.6988,132.1575 47.7034,132.1903 47.7115,132.2535 47.7093,132.2884 47.7449,132.3261 47.758,132.3497 47.7573,132.5022 47.7114,132.5563 47.7168,132.5952 47.7346,132.589 47.7779,132.6158 47.826,132.667 47.8621,132.6763 47.8792,132.6545 47.9322,132.6667 47.9514,132.7137 47.958,132.7725 47.9284,132.8102 47.9351,132.8403 47.9618,132.8635 47.9932,132.9117 48.0167,132.9915 48.0324,133.0256 48.0649,133.0973 48.0998,133.1482 48.1092,133.2016 48.1064,133.2711 48.0909,133.3181 48.1006,133.3512 48.115,133.395 48.122,133.4518 48.11,133.5112 48.1176,133.556 48.1332,133.5761 48.1859,133.6097 48.1961,133.6395 48.1895,133.6851 48.1654,133.7207 48.1667,133.7614 48.1819,133.7978 48.2049,133.8437 48.1798,133.8795 48.194,133.8704 48.2351,133.9205 48.2749,134.0046 48.278,134.0167 48.2876,134.0095 48.3174,134.0214 48.3354,134.0497 48.3404,134.1237 48.3342,134.2466 48.3652,134.275 48.3779,134.32 48.3795,134.4178 48.3974,134.4339 48.4095,134.509 48.4174,134.5734 48.4067,134.6689 48.4102,134.6978 48.4024,134.7348 48.3811,134.7667 48.3739,134.7704 48.3565,134.7149 48.2811,134.6681 48.24,134.6633 48.203,134.6691 48.1555,134.6322 48.1198,134.6158 48.091,134.5815 48.0655,134.5688 48.043,134.5795 48.0074,134.5631 47.9752,134.5876 47.9449,134.5773 47.9276,134.5923 47.9053,134.6542 47.8971,134.6718 47.8199,134.7083 47.7998,134.7621 47.7598,134.7702 47.7173,134.744 47.6816,134.6752 47.629,134.6772 47.5904,134.6072 47.5356,134.5737 47.5218,134.5646 47.4887,134.5382 47.4832,134.501 47.4504,134.4779 47.4428,134.4427 47.4458,134.3905 47.4362,134.3183 47.4352,134.2571 47.3891,134.238 47.3536,134.1985 47.3445,134.1711 47.321,134.1472 47.2654,134.159 47.2366,134.2106 47.2007,134.2241 47.1691,134.2238 47.1258,134.2082 47.0999,134.1398 47.0918,134.1153 47.066,134.1149 47.0455,134.0824 46.9974,134.0549 46.9777,134.0684 46.9378,134.0349 46.8843,134.0361 46.8501,134.0182 46.8315,134.0197 46.8064,134.0454 46.7794,134.0172 46.7272,134.0236 46.6908,134.0085 46.6546,133.9952 46.637,133.9153 46.5963,133.8839 46.5246,133.846 46.4851,133.8526 46.4456,133.8899 46.4462,133.9145 46.4311,133.9422 46.3937,133.9198 46.3704,133.8658 46.3543,133.8653 46.3349,133.8933 46.3256,133.8903 46.2963,133.9123 46.2737,133.8981 46.2529,133.8396 46.1998,133.8226 46.2234,133.7941 46.2178,133.7898 46.1948,133.7551 46.1702,133.6979 46.1611,133.6813 46.1377,133.6967 46.1082,133.7363 46.0717,133.7351 46.055,133.6737 45.9834,133.6636 45.9391,133.6135 45.9416,133.5994 45.9234,133.6086 45.8983,133.5896 45.8906,133.5797 45.8666,133.5359 45.8961,133.5052 45.8887,133.5011 45.8738,133.4646 45.8355,133.4614 45.799,133.4757 45.7808,133.4305 45.7041,133.4689 45.692,133.4803 45.6581,133.4446 45.6526,133.4437 45.627,133.4117 45.6169,133.3855 45.5773,133.2724 45.5372,133.247 45.5163,133.183 45.4984,133.1633 45.4658,133.1582 45.4367,133.1338 45.4256,133.1413 45.3747,133.1125 45.3517,133.0877 45.2553,133.1159 45.2196,133.1278 45.1776,133.1227 45.1535,133.1323 45.1254,133.1001 45.1222,133.0943 45.105,133.0629 45.093,133.0372 45.0565,132.9784 45.0291,132.9105 45.0304,132.8596 45.0581,132 45.2516,131.9815 45.268,131.9265 45.2806,131.9088 45.336,131.8754 45.3393,131.8262 45.2979,131.7789 45.2396,131.7849 45.2087,131.7507 45.2121,131.7229 45.2272,131.6967 45.2147,131.6735 45.2199,131.6433 45.1568,131.6776 45.1479,131.6852 45.1247,131.6235 45.0726,131.5577 45.043,131.5218 45.0102,131.4776 44.9955,131.4872 44.9675,131.4482 44.9672,131.3891 44.9829,131.3498 44.9871,131.3036 44.9634,131.2987 44.9404,131.2649 44.9179,131.1978 44.9125,131.1948 44.9293,131.1497 44.9447,131.0808 44.924,131.0921 44.8957,131.0675 44.8789,130.9592 44.8534,130.9614 44.8183,130.9835 44.824,131.006 44.8115,131.0157 44.7808,131.0549 44.7848,131.0604 44.7608,131.0848 44.7398,131.083 44.7144,131.1007 44.7071,131.2424 44.2365,131.3018 44.0419,131.2486 44.0143,131.2384 43.9528,131.2557 43.9444,131.259 43.9129,131.2268 43.8716,131.2113 43.8359,131.2168 43.8042,131.2087 43.7704,131.2252 43.7394,131.2098 43.6962,131.2321 43.6363,131.214 43.629,131.1938 43.5279,131.2407 43.5078,131.286 43.4728,131.2432 43.4721,131.1981 43.4398,131.146 43.4244,131.1184 43.4302,131.0577 43.4818,131.0262 43.501,130.9838 43.4923,130.9373 43.4737,130.9 43.4318,130.8538 43.4359,130.8335 43.4561,130.8174 43.4921,130.7833 43.5206,130.7669 43.5224,130.731 43.5525,130.6998 43.5562,130.6602 43.5815,130.6216 43.5817,130.6268 43.613,130.6102 43.622,130.5785 43.6112,130.5511 43.6272,130.49 43.6362,130.4698 43.6599,130.4176 43.6489,130.3907 43.6739,130.3877 43.7039,130.415 43.7411,130.3795 43.7626,130.3668 43.8223,130.3771 43.8509,130.3572 43.8861,130.3727 43.9068,130.3303 43.9613,130.3549 43.9901,130.3545 44.04,130.3079 44.0345,130.2909 43.9982,130.2629 43.9775,130.2515 43.9461,130.2322 43.9379,130.2008 43.9453,130.1439 43.9134,130.1332 43.8768,130.1086 43.8762,130.0994 43.8494,130.0692 43.8331,130.0189 43.8507,130.0004 43.8915,130.0138 43.9405,129.9793 43.9808,129.9715 44.0119,129.9363 44.0252,129.8717 43.9984,129.8596 44.0089,129.8 43.965,129.7743 43.9604,129.7782 43.904,129.7675 43.8913,129.7365 43.8949,129.7339 43.8744,129.691 43.8803,129.6489 43.8697,129.6067 43.8775,129.518 43.8678,129.4883 43.8744,129.4416 43.8478,129.4104 43.8414,129.3968 43.817,129.3405 43.7966,129.3084 43.8086,129.2392 43.8129,129.2022 43.7788,129.2124 43.7398,129.2047 43.6636,129.2232 43.6305,129.2197 43.5895,129.169 43.5628,129.1372 43.5687,129.0841 43.5458,129.0405 43.5417,129.0017 43.5204,128.9518 43.5393,128.938 43.5535,128.8719 43.5376,128.83 43.5818,128.8151 43.6321,128.7823 43.6812,128.7743 43.7133,128.7233 43.7347,128.7579 43.7524,128.7387 43.8004,128.7162 43.8192,128.7566 43.8574,128.7293 43.8867,128.6953 43.8991,128.6802 43.8889,128.6356 43.8909,128.6233 43.9183,128.6335 43.9353,128.5799 43.9832,128.5655 44.0448,128.5277 44.091,128.5242 44.1058,128.4644 44.1534,128.4549 44.1965,128.467 44.2404,128.4469 44.2572,128.4678 44.3075,128.4731 44.3732,128.4483 44.4146,128.455 44.4301,128.4217 44.4706,128.3861 44.4821,128.3636 44.5113,128.3387 44.5073,128.2917 44.4816,128.2853 44.466,128.2449 44.4424,128.2184 44.4421,128.1948 44.4095,128.1804 44.3601,128.1592 44.3418,128.1457 44.3538,128.1187 44.3473,128.0818 44.3554,128.0628 44.3728,128.0496 44.3278,128.057 44.3051,128.0936 44.286,128.06 44.2631,128.0841 44.2439,128.0837 44.1777,128.0541 44.169,128.08 44.1393,128.044 44.1039,128.001 44.0923,127.9422 44.0846,127.9012 44.0618,127.859 44.0592,127.8402 44.0801,127.8049 44.0837,127.781 44.0672,127.7263 44.0946,127.729 44.1161,127.7135 44.1538,127.7182 44.1831,127.6739 44.1648,127.6346 44.1911,127.6185 44.186,127.5851 44.2261,127.6103 44.2528,127.6054 44.2891,127.5738 44.3075,127.5633 44.3269,127.5295 44.3501,127.5011 44.3884,127.4767 44.3995,127.5036 44.4379,127.475 44.4542,127.4578 44.479,127.476 44.525,127.5288 44.5204,127.5598 44.5534,127.5385 44.5744,127.5187 44.5751,127.4683 44.6059,127.4296 44.6108,127.3816 44.6293,127.27 44.6375,127.2554 44.605,127.2181 44.6202,127.2002 44.645,127.1665 44.6414,127.1451 44.6096,127.1225 44.6035,127.0876 44.6131,127.0793 44.5892,127.0497 44.5663,127.0391 44.5886,127.021 44.6685,127.0283 44.72,126.9894 44.7648,126.9776 44.8246,126.9906 44.8694,127.0089 44.8974,127.0665 44.9073,127.0869 44.9422,127.0447 45.0014,127.0094 45.023,127.0046 45.0394,126.9605 45.0795,126.9635 45.1141,126.9516 45.1354,126.9153 45.1401,126.8145 45.143,126.7921 45.1316,126.7811 45.1558,126.7175 45.1851,126.6799 45.1842,126.6556 45.1933,126.639 45.221,126.5749 45.249,126.5405 45.2358,126.5167 45.2442,126.435 45.2211,126.425 45.2338,126.3821 45.2138,126.3498 45.1828,126.262 45.1648,126.2436 45.1418,126.1958 45.1507,126.1058 45.1397,126.077 45.1602,126.0377 45.1674,125.9903 45.16,125.9429 45.1953,125.9064 45.1932,125.8358 45.2366,125.8118 45.2362,125.809 45.2628,125.7841 45.2729,125.6896 45.3474,125.7087 45.3932,125.6955 45.4301,125.703 45.4564,125.6898 45.4696,125.6839 45.5068,125.6541 45.5039,125.6109 45.5167,125.5786 45.4867,125.5203 45.4768,125.4941 45.4655,125.4703 45.486,125.4356 45.4817,125.428 45.4574,125.3733 45.3969,125.337 45.3932,125.3189 45.4176,125.2935 45.3996,125.2519 45.4158,125.173 45.397,125.1322 45.407,125.0999 45.3818,125.065 45.3794,125.0612 45.3953,125.0857 45.4184,125.0461 45.4238,125.0214 45.4896,124.9608 45.4915,124.9363 45.5049,124.9265 45.535,124.9106 45.5386,124.894 45.5035,124.8737 45.4835,124.8865 45.4485,124.8773 45.4359,124.8278 45.4533,124.7784 45.4342,124.7687 45.4659,124.75 45.4651,124.7212 45.4411,124.6772 45.449,124.6378 45.4324,124.5784 45.4512,124.5764 45.4246,124.5497 45.41,124.5121 45.4178,124.4758 45.4534,124.4273 45.4503,124.4057 45.4363,124.3716 45.4503,124.3461 45.4875,124.3613 45.5076,124.3447 45.5444,124.2849 45.5364,124.2577 45.553,124.2676 45.5823,124.2339 45.5886,124.193 45.6177,124.1622 45.6122,124.131 45.6322,124.1436 45.6596,124.1325 45.6828,124.092 45.7019,124.0893 45.7224,124.055 45.7462,124.0081 45.7487,123.9951 45.7672,124.0581 45.8,124.0272 45.8346,124.0635 45.8401,124.0488 45.8894,123.994 45.9028,123.9628 45.9339,123.9689 45.9739,124.0023 45.9784,124.0253 46.0146,124.0304 46.0377,123.9982 46.0584,124.0126 46.0772,123.9902 46.0927,124.0096 46.1149,123.9715 46.1604,123.953 46.1941,123.9572 46.23,123.9266 46.284,123.9133 46.2541,123.8898 46.3031,123.8398 46.303,123.7978 46.267,123.7323 46.2522,123.6633 46.2556,123.6017 46.2495,123.586 46.231,123.5384 46.2318,123.4956 46.2562,123.4553 46.235,123.4019 46.2409,123.3605 46.2213,123.339 46.2415,123.2778 46.2492,123.2404 46.2705,123.2176 46.2682,123.1723 46.2454,123.1337 46.2971,123.0011 46.4344,123.0034 46.5161,122.9964 46.5707,123.0418 46.5773,123.0385 46.6146,123.0695 46.6202,123.0841 46.6016,123.1733 46.6115,123.2006 46.5881,123.2233 46.5869,123.266 46.6118,123.2661 46.6538,123.3112 46.6599,123.3766 46.676,123.4688 46.6832,123.5966 46.6875,123.624 46.7252,123.6199 46.8012,123.5913 46.813,123.6109 46.8364,123.5944 46.8687,123.6024 46.8865,123.5729 46.8957,123.563 46.8645,123.569 46.8424,123.5534 46.8234,123.5076 46.8238,123.4845 46.8338,123.4785 46.8566,123.5162 46.9206,123.5259 46.9493,123.4786 46.9529,123.4222 46.9319,123.3872 46.947,123.342 46.9812,123.2982 46.9971,123.2984 46.9628,123.3548 46.9672,123.3986 46.9328,123.3992 46.8995,123.3696 46.8353,123.3338 46.8244,123.3163 46.8517,123.2923 46.8633,123.235 46.8568,123.2206 46.8154,123.1893 46.7963,123.1537 46.7425,123.1307 46.734,123.0901 46.7336,123.0231 46.7248,122.9959 46.7279,122.9778 46.7651,122.9219 46.7864,122.8973 46.8078,122.8922 46.8653,122.8734 46.8863,122.8926 46.9221,122.8898 46.9521,122.8332 46.9355,122.7977 46.9363,122.7705 46.9691,122.7718 47.0001,122.8052 47.0277,122.8422 47.0458,122.8235 47.0623,122.7827 47.0753,122.7038 47.0798,122.6143 47.1201,122.6065 47.1341,122.5434 47.1755,122.5188 47.2051,122.5118 47.2287,122.4544 47.2767,122.4211 47.3272,122.3926 47.3396,122.5009 47.4004,122.5169 47.449,122.5406 47.4992,122.568 47.5328,122.6004 47.5506,122.7453 47.6062,122.8519 47.6761,122.9396 47.702,123.0332 47.7435,123.1556 47.7797,123.2074 47.8228,123.2476 47.8731,123.2814 47.9405,123.3082 47.9561,123.3418 47.9622,123.4164 47.987,123.5298 48.0193,123.5704 48.0423,123.649 48.1116,123.6973 48.1495,123.7383 48.195,123.8518 48.2674,124.0191 48.3961,124.0783 48.437,124.133 48.4626,124.2369 48.5207,124.2546 48.5363,124.2952 48.5161,124.2978 48.4537,124.323 48.4313,124.3039 48.4103,124.3235 48.3779,124.3122 48.3479,124.3482 48.3105,124.3582 48.2803,124.4139 48.2431,124.4074 48.2064,124.4126 48.1793,124.4558 48.1548,124.4626 48.1302,124.4268 48.1247,124.4411 48.0967,124.4966 48.1203,124.5147 48.1391,124.5222 48.1723,124.5461 48.2001,124.5504 48.2668,124.5588 48.308,124.5192 48.3687,124.5203 48.4215,124.5008 48.4432,124.5502 48.4626,124.5343 48.4812,124.5272 48.514,124.5431 48.5313,124.5164 48.5553,124.5409 48.5755,124.5602 48.5728,124.5786 48.6221,124.5971 48.634,124.6165 48.6969,124.608 48.7455,124.6496 48.7793,124.6376 48.8065,124.65 48.8337,124.6753 48.84,124.7042 48.866,124.7056 48.9192,124.7392 48.9189,124.7526 48.9708,124.8029 49.0209,124.8159 49.0432,124.8203 49.0808,124.8018 49.1066,124.8359 49.1229,124.8562 49.1656,124.9047 49.1814,124.9474 49.1628,124.977 49.1609,124.9977 49.173,125.0308 49.1754,125.033 49.1499,125.1103 49.1239,125.1484 49.1438,125.1767 49.1812,125.2133 49.1878,125.2216 49.2315,125.2053 49.2454,125.2202 49.2821,125.2463 49.3099,125.2472 49.3551,125.2708 49.3737,125.2493 49.3943,125.2502 49.4331,125.2643 49.4518,125.2277 49.4817,125.2146 49.522,125.2291 49.5357,125.2249 49.5929,125.1966 49.5926,125.1602 49.626,125.1351 49.6208,125.123 49.641,125.1245 49.6692,125.1582 49.6671,125.193 49.6466,125.2143 49.6679,125.2106 49.7003,125.2193 49.7227,125.2182 49.7948,125.1814 49.8131,125.2155 49.8335,125.2377 49.8729,125.2074 49.9034,125.1788 49.9561,125.2264 49.9569,125.2364 49.9877,125.2883 50.0048,125.282 50.0321,125.3217 50.0485,125.3232 50.0636,125.2772 50.0682,125.2637 50.0775,125.2745 50.1265,125.3064 50.1376,125.3706 50.136,125.3506 50.1623,125.3825 50.1976,125.409 50.1936,125.4347 50.2035,125.4447 50.251,125.4731 50.296,125.5166 50.3496,125.5301 50.379,125.516 50.4096,125.584 50.4509,125.6239 50.4418,125.6489 50.4702,125.6819 50.4803,125.727 50.52,125.7655 50.5174,125.8226 50.56,125.808 50.62,125.7866 50.6413,125.8123 50.6881,125.8119 50.7078,125.7737 50.726,125.7546 50.7526,125.7977 50.7712,125.8311 50.7538,125.8318 50.7928,125.8785 50.8004,125.8799 50.8215,125.9101 50.8265,125.9183 50.8428,126.0141 50.9128,126.0621 50.9668,126.027 51.0096,126.0498 51.0437,125.9698 51.0852,125.9848 51.0974,125.9757 51.1217,125.9414 51.1079,125.9018 51.1377,125.883 51.1327,125.844 51.2113,125.8098 51.2231,125.7502 51.2259,125.7542 51.2609,125.7259 51.2771,125.682 51.3379,125.6488 51.35,125.5796 51.4242,125.5583 51.4561,125.4989 51.4984,125.4653 51.5278,125.4154 51.5611,125.3725 51.583,125.3607 51.6145,125.3246 51.6198,125.3026 51.6077,125.2789 51.6318,125.2491 51.628,125.2249 51.6378,125.2071 51.6247,125.1636 51.6371,125.1388 51.6306,125.121 51.659,125.0939 51.655,125.0529 51.6069,125.0701 51.5529,125.0416 51.5258,124.9822 51.5218,124.97 51.5038,124.9145 51.5003,124.9363 51.4414,124.9045 51.4321,124.8521 51.3773,124.7758 51.3928,124.7505 51.3783,124.7364 51.3527,124.704 51.3393,124.6452 51.3357,124.6217 51.324,124.5803 51.3569,124.5455 51.3753,124.5235 51.3672,124.4902 51.3817,124.4674 51.3609,124.4392 51.3602,124.4177 51.3412,124.4204 51.3075,124.3945 51.2719,124.3262 51.279,124.297 51.2877,124.2369 51.3361,124.2005 51.3519,124.169 51.3379,124.1471 51.3476,124.0841 51.34,124.0702 51.3221,124.0212 51.3184,123.9722 51.3213,123.9151 51.3007,123.8814 51.3165,123.8334 51.3632,123.7895 51.3578,123.7466 51.3715,123.7133 51.3976,123.6728 51.3713,123.6346 51.3208,123.5923 51.3097,123.5463 51.2862,123.5066 51.2827,123.4832 51.2906,123.4498 51.2865,123.4436 51.2704,123.3989 51.277,123.3712 51.2627,123.3413 51.2707,123.3015 51.2648,123.2657 51.2477,123.2061 51.2803,123.1605 51.2853,123.06 51.3179,123.0219 51.3179,123.0089 51.3047,122.9722 51.3259,122.948 51.3599,122.9599 51.3853,122.9295 51.4072,122.8912 51.4169,122.8929 51.4384,122.8674 51.4475,122.85 51.4721,122.8791 51.5013,122.8512 51.5277,122.88 51.5487,122.8256 51.5768,122.8469 51.6125,122.8131 51.635,122.81 51.6557,122.7716 51.6857,122.7645 51.7267,122.7419 51.7393,122.7586 51.7657,122.7548 51.7941,122.7247 51.8375,122.7115 51.8793,122.6912 51.8875,122.7256 51.9226,122.7102 51.9452,122.7138 51.972,122.6659 51.9773,122.6471 52.055,122.6182 52.072,122.6398 52.0966,122.6305 52.1332,122.6829 52.136,122.7274 52.147,122.7382 52.164,122.7689 52.1764,122.7666 52.2074,122.7775 52.236,122.7644 52.2561,122.6999 52.2536,122.6523 52.2819,122.6445 52.2726,122.5777 52.2666,122.5621 52.279,122.4959 52.2858,122.4712 52.3095,122.4738 52.3476,122.4507 52.3641,122.439 52.3872,122.3979 52.3764,122.3637 52.4069,122.3427 52.4089,122.32 52.4357,122.304 52.4727,122.2014 52.466,122.1646 52.4882,122.1596 52.5136,122.1331 52.5058,122.1268 52.4743,122.1022 52.4462,122.0762 52.4413,122.0804 52.4193,122.0435 52.4082,122.015 52.3653,121.9992 52.3611,121.9468 52.3164,121.9349 52.2904,121.8908 52.2785,121.8293 52.2796,121.7962 52.2965,121.7103 52.3142,121.7118 52.3368,121.6878 52.3694,121.6547 52.3867,121.6727 52.4172,121.6418 52.4442,121.5827 52.4398,121.5541 52.4593,121.522 52.4509,121.4869 52.4827,121.4659 52.4805,121.4078 52.497,121.4012 52.5212,121.3453 52.5327,121.3223 52.5498,121.3173 52.5704,121.2721 52.5848,121.2174 52.5752,121.1742 52.5971,121.2289 52.6169,121.2385 52.6296,121.2844 52.6496,121.3017 52.674,121.3646 52.6808,121.4464 52.733,121.4737 52.7719,121.5 52.7739,121.5296 52.7994,121.5834 52.8227,121.6127 52.8494,121.5956 52.8699,121.6008 52.889,121.6555 52.9114,121.673 52.9508,121.7019 52.9959,121.7442 53.0011,121.7773 53.0162,121.8068 53.0667,121.7673 53.0873,121.7763 53.1021,121.7449 53.1448,121.7113 53.1438,121.6613 53.1659,121.6507 53.1916,121.6663 53.2109,121.6707 53.2389,121.6402 53.2583,121.6073 53.2566,121.5674 53.2891,121.5 53.3169,121.4916 53.3332))&quot;</value>
+                <value>48.7465</value>
+                <value>127.6013</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+          <mark-label id='1' label-state='off'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Longitude (generated)]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]</field>
+                  <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:当期值:qk]</field>
+                  <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Geometry (generated)]</field>
+                  <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]</field>
+                  <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Longitude (generated)]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;蒙东&quot;</value>
+                <value>350224.64285714272</value>
+                <value>&quot;POLYGON((97.1698 42.7848,97.1821 42.7921,97.5037 42.7504,97.8758 42.6988,98.0772 42.6707,98.1758 42.6553,98.5185 42.6391,98.9769 42.6047,99.4961 42.5676,99.6189 42.5877,99.8212 42.6236,99.971 42.6484,100.2654 42.6361,100.3181 42.6862,100.5487 42.6811,100.8481 42.6719,101.1598 42.6082,101.2568 42.5895,101.5715 42.525,101.794 42.5045,101.8178 42.486,102.0747 42.2273,102.0826 42.2242,102.4436 42.1451,102.5434 42.1609,102.655 42.1515,102.7083 42.1507,103.0042 42.0309,103.4199 41.8797,103.6472 41.8393,103.7438 41.8239,103.851 41.8003,104.0731 41.8034,104.297 41.8396,104.5228 41.8742,104.5238 41.8447,104.5165 41.6621,104.6724 41.6454,104.9082 41.654,104.9193 41.6527,105.0082 41.5832,105.2293 41.7479,105.2893 41.7475,105.3601 41.7773,105.3825 41.7941,105.5185 41.8504,105.5862 41.8845,105.7159 41.9369,105.9171 41.9984,106.4087 42.1725,106.6041 42.2392,106.7841 42.2908,107.0474 42.3154,107.2622 42.3611,107.2911 42.4079,107.4596 42.4565,107.4946 42.4545,107.5722 42.4095,107.7274 42.4125,107.9304 42.4015,107.9783 42.4123,108.0178 42.4324,108.0518 42.434,108.0845 42.4355,108.2431 42.4618,108.2958 42.437,108.4552 42.4424,108.5367 42.4419,108.6971 42.4138,108.7889 42.4145,108.8393 42.3963,108.9357 42.4342,109.0173 42.4558,109.2841 42.4339,109.3056 42.4392,109.4791 42.4551,109.4973 42.4659,109.5346 42.4691,109.6776 42.5582,109.8962 42.6321,110.1004 42.6404,110.1311 42.6711,110.331 42.7344,110.4312 42.7795,110.4621 42.8346,110.6221 42.9337,110.6776 43.0117,110.6798 43.0382,110.7291 43.0858,110.7648 43.1015,110.9833 43.3058,111.0612 43.3543,111.1467 43.3773,111.1694 43.3893,111.2626 43.4158,111.3483 43.4333,111.3894 43.4684,111.4495 43.4896,111.557 43.4875,111.6001 43.5096,111.787 43.6687,111.8832 43.6727,111.9458 43.6899,111.9652 43.7467,111.9556 43.818,111.8702 43.9335,111.7716 44.0044,111.7397 44.0124,111.6783 44.0417,111.5995 44.1156,111.5903 44.1347,111.5538 44.1686,111.534 44.2054,111.5272 44.2635,111.5104 44.2854,111.4774 44.3057,111.4233 44.3195,111.4103 44.3565,111.4214 44.3943,111.4733 44.4867,111.5109 44.5091,111.5257 44.5498,111.5629 44.5749,111.5542 44.6462,111.5848 44.7174,111.6177 44.7771,111.6911 44.8684,111.736 44.9415,111.7604 44.971,111.8088 45.0053,111.8843 45.0452,111.9805 45.0864,112.0629 45.094,112.1064 45.0715,112.2429 45.0686,112.3702 45.0608,112.4215 45.0749,112.5318 44.9984,112.5913 44.9295,112.7033 44.8783,112.8453 44.8388,112.9237 44.8403,113.0196 44.8247,113.1196 44.796,113.3674 44.7836,113.5 44.7749,113.5369 44.7565,113.6279 44.7431,113.6936 44.7781,113.7944 44.8483,113.8551 44.8623,113.8806 44.8793,113.9045 44.9127,113.939 44.9124,113.9764 44.9239,114.0543 44.9261,114.1076 44.9528,114.1517 44.991,114.1757 45.0368,114.2011 45.0444,114.3021 45.1039,114.3432 45.1205,114.397 45.168,114.4621 45.2188,114.5194 45.2939,114.5356 45.3369,114.54 45.3838,114.5837 45.3976,114.6794 45.4195,114.7362 45.4374,114.9202 45.3809,114.985 45.3756,115.1662 45.3963,115.3562 45.3889,115.5572 45.4359,115.685 45.4572,115.8047 45.535,115.9303 45.6302,116.0193 45.6601,116.0255 45.6811,116.0777 45.6825,116.1162 45.6757,116.1728 45.6908,116.2143 45.7255,116.2104 45.7408,116.2555 45.7682,116.2793 45.7707,116.2706 45.8288,116.2574 45.8636,116.2372 45.8721,116.2639 45.9612,116.3395 46.0542,116.4011 46.1256,116.4344 46.1372,116.5181 46.2189,116.566 46.2529,116.5771 46.2882,116.599 46.3025,116.6544 46.3199,116.7608 46.3283,116.7693 46.343,116.8104 46.3542,116.8173 46.3767,116.8956 46.3761,117.0145 46.3611,117.0951 46.355,117.2427 46.3646,117.3681 46.3605,117.3787 46.3968,117.3702 46.4142,117.3909 46.4783,117.4391 46.5256,117.4138 46.5808,117.4417 46.5824,117.4904 46.5985,117.5125 46.5898,117.5427 46.6005,117.5765 46.5935,117.5875 46.6035,117.6198 46.5916,117.6336 46.5532,117.6929 46.5159,117.7162 46.5128,117.7758 46.5348,117.8266 46.5277,117.858 46.5432,117.8597 46.5737,117.8867 46.5816,117.9245 46.6147,117.9657 46.6121,117.9852 46.6296,118.033 46.6281,118.1083 46.6676,118.1546 46.6846,118.1868 46.6822,118.2284 46.7135,118.275 46.7202,118.312 46.7401,118.4008 46.7285,118.4363 46.707,118.5753 46.6927,118.6293 46.7174,118.6655 46.6982,118.7883 46.686,118.7871 46.7211,118.8314 46.7672,118.8991 46.7747,118.9099 46.7644,118.915 46.7221,118.9395 46.7211,118.9935 46.7475,119.0649 46.6738,119.1014 46.6465,119.1616 46.6549,119.1869 46.6436,119.2313 46.6489,119.2991 46.6092,119.3449 46.6179,119.3807 46.6068,119.4292 46.6389,119.4753 46.6281,119.5519 46.6347,119.5796 46.6131,119.6375 46.6258,119.6657 46.6164,119.6798 46.5858,119.7307 46.6145,119.7757 46.627,119.8056 46.6668,119.8458 46.6704,119.8997 46.6654,119.9056 46.6886,119.9251 46.7057,119.9078 46.7672,119.9299 46.7843,119.9207 46.8401,119.8966 46.864,119.9068 46.9013,119.8543 46.9191,119.8372 46.9669,119.7839 47.0248,119.7999 47.0571,119.7558 47.1296,119.7168 47.1657,119.7096 47.1936,119.6678 47.2135,119.6166 47.2457,119.5602 47.2467,119.554 47.2997,119.5215 47.3025,119.5122 47.3206,119.4737 47.3271,119.4431 47.3484,119.4296 47.3771,119.3635 47.4025,119.3588 47.4216,119.3227 47.4254,119.3279 47.4488,119.3602 47.4768,119.1943 47.5205,119.1428 47.5418,119.1217 47.6638,118.7576 47.773,118.5588 47.9919,118.4515 47.9963,118.4186 48.0093,118.3625 48.014,118.3569 48.005,118.2904 48.0026,118.2299 48.0279,118.2316 48.0401,118.1793 48.0387,118.1693 48.0484,118.1331 48.032,118.0541 48.0211,118.0419 48.011,117.9536 48.0086,117.887 48.0242,117.8069 48.0153,117.6031 47.8537,117.5244 47.7884,117.5161 47.7712,117.4795 47.7581,117.3725 47.6404,117.2835 47.698,117.0882 47.8203,117 47.8509,116.8657 47.8931,116.798 47.8988,116.6757 47.8909,116.4435 47.8378,116.2571 47.8787,116.1105 47.8173,115.9582 47.6873,115.9345 47.6804,115.6872 47.8453,115.573 47.9191,115.5307 48.1052,115.5367 48.1257,115.5208 48.1514,115.8123 48.2555,115.7864 48.5226,115.867 48.6072,116.0693 48.8154,116.033 48.8665,116.1441 49.0263,116.3461 49.3243,116.4156 49.422,116.5683 49.6503,116.7043 49.8324,116.7141 49.8384,116.7708 49.8199,117.0574 49.686,117.2732 49.6311,117.4706 49.627,117.6351 49.5655,117.8011 49.5168,117.8397 49.5481,117.8613 49.591,117.9249 49.5995,117.9825 49.6233,118.0401 49.6099,118.0748 49.6141,118.1212 49.6673,118.1507 49.659,118.2029 49.6877,118.2066 49.7124,118.2554 49.7414,118.2804 49.7429,118.3106 49.7687,118.3286 49.7682,118.3731 49.7865,118.4108 49.8225,118.4338 49.8339,118.4652 49.8236,118.4827 49.8713,118.5193 49.8812,118.5256 49.9007,118.5537 49.9095,118.5645 49.9286,118.6074 49.9346,118.6455 49.9495,118.7305 49.9443,118.7747 49.9524,118.808 49.9678,118.8248 49.9615,118.8958 49.9764,118.9313 49.9667,118.9634 49.9782,119.0575 49.9795,119.0828 49.9864,119.1175 50.0153,119.1712 50.0341,119.1841 50.0782,119.2251 50.0724,119.2528 50.0965,119.2847 50.1097,119.2981 50.1554,119.3301 50.1736,119.3101 50.2158,119.3324 50.2429,119.3191 50.2834,119.3685 50.3201,119.3299 50.3532,119.2986 50.3464,119.2267 50.3606,119.1522 50.3569,119.1385 50.4095,119.1602 50.4203,119.1957 50.4092,119.231 50.4572,119.2547 50.4676,119.2552 50.5098,119.264 50.5394,119.2875 50.5719,119.2765 50.6049,119.3475 50.6278,119.3634 50.6409,119.379 50.6815,119.4251 50.683,119.4779 50.7382,119.507 50.815,119.4891 50.8304,119.4933 50.8628,119.5169 50.9061,119.5644 50.9357,119.5905 50.9832,119.6185 50.9922,119.6231 51.0085,119.6668 51.0133,119.7172 51.0477,119.7359 51.0865,119.7521 51.0887,119.7798 51.1629,119.7532 51.2119,119.7929 51.2407,119.8043 51.2761,119.8362 51.2933,119.8793 51.3055,119.878 51.3365,119.9145 51.3438,119.9362 51.3658,119.9064 51.374,119.9105 51.3941,119.964 51.3984,119.9704 51.4385,119.995 51.46,119.9755 51.4865,119.9806 51.5057,120.0062 51.5165,120.0262 51.5451,120.0455 51.5521,120.0288 51.5822,120.062 51.6396,120.0955 51.6487,120.0876 51.6805,120.1197 51.6735,120.1693 51.6797,120.2187 51.7156,120.2864 51.7496,120.3039 51.7811,120.3546 51.7874,120.3912 51.8294,120.468 51.8505,120.4749 51.8843,120.5348 51.8777,120.5427 51.9074,120.5798 51.9089,120.6533 51.9268,120.6556 51.9556,120.7016 51.9856,120.7124 52.0092,120.68 52.0324,120.6834 52.0462,120.7364 52.0943,120.7578 52.105,120.7556 52.1409,120.7787 52.1555,120.7403 52.2027,120.7459 52.2577,120.7106 52.2593,120.6906 52.2882,120.6524 52.2985,120.6214 52.3254,120.6191 52.3607,120.639 52.3609,120.6418 52.3882,120.6837 52.4299,120.6793 52.4711,120.6995 52.4886,120.6886 52.5179,120.7234 52.5302,120.7151 52.5488,120.6777 52.5479,120.6585 52.564,120.6213 52.5694,120.5921 52.5912,120.5547 52.5948,120.4791 52.6276,120.4581 52.6437,120.4312 52.6378,120.398 52.617,120.3698 52.6144,120.2792 52.6215,120.1818 52.5772,120.1192 52.585,120.0678 52.5844,120.0443 52.5956,120.0273 52.6429,120.0607 52.7,120.0342 52.7795,120.0912 52.7861,120.1351 52.8121,120.1793 52.8079,120.2119 52.8393,120.2884 52.867,120.2877 52.8877,120.3421 52.9031,120.3529 52.9372,120.4064 52.9583,120.4391 53.0044,120.5212 53.0427,120.5446 53.0752,120.6063 53.0994,120.6324 53.1015,120.651 53.1344,120.6858 53.1433,120.6839 53.1712,120.7459 53.2106,120.78 53.2203,120.8327 53.2485,120.814 53.2664,120.9498 53.2963,121.0392 53.287,121.088 53.305,121.1136 53.2794,121.1444 53.2825,121.2153 53.279,121.2576 53.2928,121.2997 53.2986,121.3384 53.3243,121.4051 53.3184,121.4916 53.3332,121.5 53.3169,121.5674 53.2891,121.6073 53.2566,121.6402 53.2583,121.6707 53.2389,121.6663 53.2109,121.6507 53.1916,121.6613 53.1659,121.7113 53.1438,121.7449 53.1448,121.7763 53.1021,121.7673 53.0873,121.8068 53.0667,121.7773 53.0162,121.7442 53.0011,121.7019 52.9959,121.673 52.9508,121.6555 52.9114,121.6008 52.889,121.5956 52.8699,121.6127 52.8494,121.5834 52.8227,121.5296 52.7994,121.5 52.7739,121.4737 52.7719,121.4464 52.733,121.3646 52.6808,121.3017 52.674,121.2844 52.6496,121.2385 52.6296,121.2289 52.6169,121.1742 52.5971,121.2174 52.5752,121.2721 52.5848,121.3173 52.5704,121.3223 52.5498,121.3453 52.5327,121.4012 52.5212,121.4078 52.497,121.4659 52.4805,121.4869 52.4827,121.522 52.4509,121.5541 52.4593,121.5827 52.4398,121.6418 52.4442,121.6727 52.4172,121.6547 52.3867,121.6878 52.3694,121.7118 52.3368,121.7103 52.3142,121.7962 52.2965,121.8293 52.2796,121.8908 52.2785,121.9349 52.2904,121.9468 52.3164,121.9992 52.3611,122.015 52.3653,122.0435 52.4082,122.0804 52.4193,122.0762 52.4413,122.1022 52.4462,122.1268 52.4743,122.1331 52.5058,122.1596 52.5136,122.1646 52.4882,122.2014 52.466,122.304 52.4727,122.32 52.4357,122.3427 52.4089,122.3637 52.4069,122.3979 52.3764,122.439 52.3872,122.4507 52.3641,122.4738 52.3476,122.4712 52.3095,122.4959 52.2858,122.5621 52.279,122.5777 52.2666,122.6445 52.2726,122.6523 52.2819,122.6999 52.2536,122.7644 52.2561,122.7775 52.236,122.7666 52.2074,122.7689 52.1764,122.7382 52.164,122.7274 52.147,122.6829 52.136,122.6305 52.1332,122.6398 52.0966,122.6182 52.072,122.6471 52.055,122.6659 51.9773,122.7138 51.972,122.7102 51.9452,122.7256 51.9226,122.6912 51.8875,122.7115 51.8793,122.7247 51.8375,122.7548 51.7941,122.7586 51.7657,122.7419 51.7393,122.7645 51.7267,122.7716 51.6857,122.81 51.6557,122.8131 51.635,122.8469 51.6125,122.8256 51.5768,122.88 51.5487,122.8512 51.5277,122.8791 51.5013,122.85 51.4721,122.8674 51.4475,122.8929 51.4384,122.8912 51.4169,122.9295 51.4072,122.9599 51.3853,122.948 51.3599,122.9722 51.3259,123.0089 51.3047,123.0219 51.3179,123.06 51.3179,123.1605 51.2853,123.2061 51.2803,123.2657 51.2477,123.3015 51.2648,123.3413 51.2707,123.3712 51.2627,123.3989 51.277,123.4436 51.2704,123.4498 51.2865,123.4832 51.2906,123.5066 51.2827,123.5463 51.2862,123.5923 51.3097,123.6346 51.3208,123.6728 51.3713,123.7133 51.3976,123.7466 51.3715,123.7895 51.3578,123.8334 51.3632,123.8814 51.3165,123.9151 51.3007,123.9722 51.3213,124.0212 51.3184,124.0702 51.3221,124.0841 51.34,124.1471 51.3476,124.169 51.3379,124.2005 51.3519,124.2369 51.3361,124.297 51.2877,124.3262 51.279,124.3945 51.2719,124.4204 51.3075,124.4177 51.3412,124.4392 51.3602,124.4674 51.3609,124.4902 51.3817,124.5235 51.3672,124.5455 51.3753,124.5803 51.3569,124.6217 51.324,124.6452 51.3357,124.704 51.3393,124.7364 51.3527,124.7505 51.3783,124.7758 51.3928,124.8521 51.3773,124.9045 51.4321,124.9363 51.4414,124.9145 51.5003,124.97 51.5038,124.9822 51.5218,125.0416 51.5258,125.0701 51.5529,125.0529 51.6069,125.0939 51.655,125.121 51.659,125.1388 51.6306,125.1636 51.6371,125.2071 51.6247,125.2249 51.6378,125.2491 51.628,125.2789 51.6318,125.3026 51.6077,125.3246 51.6198,125.3607 51.6145,125.3725 51.583,125.4154 51.5611,125.4653 51.5278,125.4989 51.4984,125.5583 51.4561,125.5796 51.4242,125.6488 51.35,125.682 51.3379,125.7259 51.2771,125.7542 51.2609,125.7502 51.2259,125.8098 51.2231,125.844 51.2113,125.883 51.1327,125.9018 51.1377,125.9414 51.1079,125.9757 51.1217,125.9848 51.0974,125.9698 51.0852,126.0498 51.0437,126.027 51.0096,126.0621 50.9668,126.0141 50.9128,125.9183 50.8428,125.9101 50.8265,125.8799 50.8215,125.8785 50.8004,125.8318 50.7928,125.8311 50.7538,125.7977 50.7712,125.7546 50.7526,125.7737 50.726,125.8119 50.7078,125.8123 50.6881,125.7866 50.6413,125.808 50.62,125.8226 50.56,125.7655 50.5174,125.727 50.52,125.6819 50.4803,125.6489 50.4702,125.6239 50.4418,125.584 50.4509,125.516 50.4096,125.5301 50.379,125.5166 50.3496,125.4731 50.296,125.4447 50.251,125.4347 50.2035,125.409 50.1936,125.3825 50.1976,125.3506 50.1623,125.3706 50.136,125.3064 50.1376,125.2745 50.1265,125.2637 50.0775,125.2772 50.0682,125.3232 50.0636,125.3217 50.0485,125.282 50.0321,125.2883 50.0048,125.2364 49.9877,125.2264 49.9569,125.1788 49.9561,125.2074 49.9034,125.2377 49.8729,125.2155 49.8335,125.1814 49.8131,125.2182 49.7948,125.2193 49.7227,125.2106 49.7003,125.2143 49.6679,125.193 49.6466,125.1582 49.6671,125.1245 49.6692,125.123 49.641,125.1351 49.6208,125.1602 49.626,125.1966 49.5926,125.2249 49.5929,125.2291 49.5357,125.2146 49.522,125.2277 49.4817,125.2643 49.4518,125.2502 49.4331,125.2493 49.3943,125.2708 49.3737,125.2472 49.3551,125.2463 49.3099,125.2202 49.2821,125.2053 49.2454,125.2216 49.2315,125.2133 49.1878,125.1767 49.1812,125.1484 49.1438,125.1103 49.1239,125.033 49.1499,125.0308 49.1754,124.9977 49.173,124.977 49.1609,124.9474 49.1628,124.9047 49.1814,124.8562 49.1656,124.8359 49.1229,124.8018 49.1066,124.8203 49.0808,124.8159 49.0432,124.8029 49.0209,124.7526 48.9708,124.7392 48.9189,124.7056 48.9192,124.7042 48.866,124.6753 48.84,124.65 48.8337,124.6376 48.8065,124.6496 48.7793,124.608 48.7455,124.6165 48.6969,124.5971 48.634,124.5786 48.6221,124.5602 48.5728,124.5409 48.5755,124.5164 48.5553,124.5431 48.5313,124.5272 48.514,124.5343 48.4812,124.5502 48.4626,124.5008 48.4432,124.5203 48.4215,124.5192 48.3687,124.5588 48.308,124.5504 48.2668,124.5461 48.2001,124.5222 48.1723,124.5147 48.1391,124.4966 48.1203,124.4411 48.0967,124.4268 48.1247,124.4626 48.1302,124.4558 48.1548,124.4126 48.1793,124.4074 48.2064,124.4139 48.2431,124.3582 48.2803,124.3482 48.3105,124.3122 48.3479,124.3235 48.3779,124.3039 48.4103,124.323 48.4313,124.2978 48.4537,124.2952 48.5161,124.2546 48.5363,124.2369 48.5207,124.133 48.4626,124.0783 48.437,124.0191 48.3961,123.8518 48.2674,123.7383 48.195,123.6973 48.1495,123.649 48.1116,123.5704 48.0423,123.5298 48.0193,123.4164 47.987,123.3418 47.9622,123.3082 47.9561,123.2814 47.9405,123.2476 47.8731,123.2074 47.8228,123.1556 47.7797,123.0332 47.7435,122.9396 47.702,122.8519 47.6761,122.7453 47.6062,122.6004 47.5506,122.568 47.5328,122.5406 47.4992,122.5169 47.449,122.5009 47.4004,122.3926 47.3396,122.4211 47.3272,122.4544 47.2767,122.5118 47.2287,122.5188 47.2051,122.5434 47.1755,122.6065 47.1341,122.6143 47.1201,122.7038 47.0798,122.7827 47.0753,122.8235 47.0623,122.8422 47.0458,122.8052 47.0277,122.7718 47.0001,122.7705 46.9691,122.7977 46.9363,122.8332 46.9355,122.8898 46.9521,122.8926 46.9221,122.8734 46.8863,122.8922 46.8653,122.8973 46.8078,122.9219 46.7864,122.9778 46.7651,122.9959 46.7279,123.0231 46.7248,123.0901 46.7336,123.1307 46.734,123.1537 46.7425,123.1893 46.7963,123.2206 46.8154,123.235 46.8568,123.2923 46.8633,123.3163 46.8517,123.3338 46.8244,123.3696 46.8353,123.3992 46.8995,123.3986 46.9328,123.3548 46.9672,123.2984 46.9628,123.2982 46.9971,123.342 46.9812,123.3872 46.947,123.4222 46.9319,123.4786 46.9529,123.5259 46.9493,123.5162 46.9206,123.4785 46.8566,123.4845 46.8338,123.5076 46.8238,123.5534 46.8234,123.569 46.8424,123.563 46.8645,123.5729 46.8957,123.6024 46.8865,123.5944 46.8687,123.6109 46.8364,123.5913 46.813,123.6199 46.8012,123.624 46.7252,123.5966 46.6875,123.4688 46.6832,123.3766 46.676,123.3112 46.6599,123.2661 46.6538,123.266 46.6118,123.2233 46.5869,123.2006 46.5881,123.1733 46.6115,123.0841 46.6016,123.0695 46.6202,123.0385 46.6146,123.0418 46.5773,122.9964 46.5707,123.0034 46.5161,123.0011 46.4344,123.1337 46.2971,123.1723 46.2454,123.1374 46.227,123.1213 46.2067,123.1204 46.1738,123.0982 46.1734,123.1057 46.1272,123.0632 46.1205,123.0386 46.0968,122.7893 46.0697,122.7878 46.0651,122.8212 45.9111,122.8179 45.8902,122.7905 45.8492,122.7708 45.832,122.7915 45.7713,122.7546 45.7407,122.734 45.7017,122.6675 45.6958,122.6646 45.7259,122.5389 45.77,122.4985 45.8069,122.4927 45.8552,122.4422 45.9068,122.409 45.9137,122.3615 45.912,122.3584 45.8499,122.3398 45.8565,122.3129 45.8294,122.2563 45.7931,122.2308 45.8277,122.1955 45.8519,122.0858 45.8802,122.0761 45.9149,122.0475 45.9309,122.0334 45.9553,122.0031 45.9619,121.9538 45.9849,121.9212 45.9866,121.9169 46.0027,121.8622 45.9986,121.8343 46.0211,121.8061 46.0228,121.7539 45.9924,121.7921 45.9708,121.8132 45.9163,121.8049 45.8787,121.7648 45.8427,121.7453 45.7921,121.7066 45.7791,121.6877 45.7621,121.6503 45.7678,121.6355 45.7487,121.6589 45.725,121.7039 45.7005,121.7519 45.6877,121.8013 45.6905,121.8059 45.7025,121.8589 45.7172,121.9392 45.7112,121.9613 45.6939,121.9968 45.6214,121.9891 45.5968,121.9607 45.5958,121.965 45.5715,121.9853 45.5528,121.9977 45.5035,122.0549 45.4712,122.1595 45.4389,122.1731 45.4056,122.1406 45.3679,122.1398 45.2889,122.2338 45.2727,122.2343 45.227,122.2271 45.2022,122.189 45.1805,122.1373 45.1808,122.1026 45.1366,122.112 45.0631,122.0909 45.0185,122.0686 45.0053,122.0795 44.9504,122.0721 44.9129,122.0382 44.8987,122.062 44.8801,122.0911 44.8069,122.0904 44.7823,122.1412 44.7764,122.1337 44.7528,122.143 44.7152,122.1094 44.7018,122.0962 44.6696,122.1053 44.6141,122.1263 44.5991,122.1289 44.5741,122.1867 44.5581,122.2176 44.5197,122.2139 44.4941,122.2292 44.4745,122.2791 44.4696,122.2885 44.3878,122.282 44.308,122.2568 44.2603,122.3164 44.2306,122.4603 44.2348,122.497 44.2481,122.6257 44.2782,122.665 44.2817,122.7439 44.3628,122.7763 44.3766,122.8473 44.397,122.9143 44.4309,123.0283 44.496,123.1162 44.5081,123.1305 44.4032,123.1079 44.3977,123.1189 44.3686,123.1739 44.3422,123.1908 44.343,123.227 44.2992,123.2509 44.2802,123.2818 44.2306,123.3018 44.1751,123.377 44.1603,123.3551 44.1287,123.3432 44.0906,123.3231 44.0776,123.3271 44.0307,123.3545 44.0173,123.3903 43.9812,123.3674 43.9689,123.4179 43.9229,123.4646 43.8539,123.4563 43.822,123.4894 43.7744,123.4717 43.7658,123.4755 43.7367,123.511 43.7124,123.5131 43.6791,123.5308 43.6305,123.5049 43.6232,123.506 43.5907,123.4593 43.5891,123.4302 43.5992,123.4453 43.5429,123.3504 43.5651,123.3079 43.549,123.3011 43.5292,123.3197 43.5124,123.3095 43.4892,123.3572 43.4803,123.383 43.4456,123.4117 43.4202,123.4378 43.4353,123.4864 43.4431,123.5162 43.3996,123.5367 43.4141,123.579 43.3747,123.604 43.3646,123.6984 43.3684,123.7014 43.3178,123.6797 43.2732,123.6607 43.2639,123.664 43.2304,123.6411 43.2099,123.6515 43.1725,123.6273 43.1224,123.6257 43.0864,123.5911 43.0555,123.5793 43.0081,123.5427 43.0023,123.4674 43.0401,123.4319 43.0261,123.4061 43.0258,123.3452 43.0044,123.2642 42.9948,123.2218 42.957,123.2019 42.9503,123.1773 42.9203,123.1819 42.8867,123.163 42.8481,123.2183 42.8308,123.0753 42.7852,123.0509 42.7677,122.9763 42.7757,122.9482 42.7533,122.92 42.769,122.8724 42.7671,122.8674 42.739,122.8428 42.7154,122.8266 42.7199,122.7757 42.7609,122.7365 42.7667,122.7219 42.784,122.6487 42.7793,122.6207 42.7711,122.582 42.7825,122.5488 42.8245,122.4259 42.8409,122.3515 42.8327,122.3433 42.8151,122.3681 42.7711,122.4502 42.7691,122.4253 42.7248,122.3897 42.7074,122.3896 42.6819,122.3252 42.6746,122.293 42.6881,122.2513 42.6933,122.2262 42.7211,122.1961 42.73,122.2 42.6921,122.1551 42.6839,122.1261 42.6882,122.0697 42.7088,122.0579 42.7209,122.0145 42.6979,121.9622 42.6995,121.9366 42.6643,121.9098 42.6545,121.8964 42.6214,121.9097 42.5854,121.8593 42.5312,121.8266 42.5297,121.8108 42.5019,121.7443 42.4839,121.7031 42.44,121.6605 42.4349,121.5859 42.5069,121.5639 42.4848,121.4998 42.4796,121.473 42.4946,121.4593 42.4785,121.3798 42.4704,121.3005 42.4337,121.2953 42.3987,121.2637 42.3787,121.2151 42.3695,121.1792 42.3445,121.1791 42.3333,121.106 42.2825,121.0818 42.2763,121.0628 42.2511,121.0474 42.2582,121.0134 42.2446,120.9351 42.2762,120.8897 42.2651,120.8718 42.2511,120.8395 42.2482,120.7764 42.2162,120.7292 42.2178,120.6871 42.1855,120.6091 42.1543,120.5793 42.1625,120.4729 42.1106,120.4614 42.0997,120.4849 42.066,120.4459 42.0548,120.4481 42.0087,120.4217 42.0057,120.4102 41.9814,120.3708 41.9917,120.3045 41.952,120.2624 41.9137,120.2808 41.8783,120.2429 41.8807,120.2105 41.8546,120.1823 41.8442,120.1793 41.8251,120.1522 41.7928,120.1246 41.7748,120.12 41.7489,120.1303 41.727,120.0793 41.6921,120.0419 41.7072,120.0174 41.7356,120.031 41.7604,120.0378 41.8017,120.0181 41.8139,120.0062 41.8516,119.9859 41.8758,119.9851 41.8983,119.9494 41.9297,119.9523 41.9692,119.9311 41.9826,119.9136 42.0112,119.8953 42.0188,119.8901 42.0445,119.8382 42.1058,119.8268 42.1341,119.855 42.1799,119.8467 42.1994,119.8207 42.2125,119.8003 42.2065,119.6984 42.2205,119.6633 42.2381,119.6365 42.2376,119.6093 42.2515,119.6026 42.2701,119.5632 42.296,119.5674 42.36,119.5275 42.3669,119.4965 42.3896,119.4723 42.343,119.4355 42.3295,119.4268 42.315,119.3674 42.2966,119.3436 42.3004,119.3023 42.2688,119.2786 42.2635,119.2718 42.2416,119.2321 42.199,119.2644 42.1848,119.2946 42.1485,119.3041 42.1199,119.3411 42.1169,119.3774 42.0903,119.3775 42.0493,119.3671 42.0195,119.3227 41.9737,119.3181 41.9376,119.333 41.926,119.3188 41.8901,119.3278 41.8708,119.3067 41.8045,119.286 41.7864,119.311 41.7619,119.312 41.7271,119.2931 41.7056,119.307 41.6816,119.3037 41.6434,119.3424 41.6121,119.4116 41.5875,119.4091 41.5596,119.3615 41.5634,119.3541 41.5435,119.4021 41.5044,119.3996 41.4806,119.3652 41.4502,119.3475 41.4099,119.323 41.4101,119.3152 41.3646,119.3223 41.3346,119.2889 41.3223,119.2413 41.3229,119.2312 41.3098,119.1925 41.2833,119.1452 41.2968,119.0794 41.2907,119.0376 41.2919,119.0124 41.304,118.9293 41.3008,118.8665 41.3027,118.8234 41.3678,118.7634 41.3485,118.7442 41.3226,118.6939 41.3308,118.6637 41.3559,118.6527 41.3456,118.596 41.3461,118.5854 41.3526,118.5084 41.343,118.4774 41.3459,118.4082 41.3308,118.3915 41.3073,118.349 41.3297,118.3433 41.3679,118.353 41.4202,118.3234 41.4477,118.2892 41.4606,118.318 41.5064,118.3055 41.5294,118.3019 41.5653,118.2302 41.5767,118.2076 41.6189,118.2146 41.6368,118.1647 41.6753,118.1291 41.728,118.1411 41.7957,118.178 41.814,118.2238 41.8107,118.2383 41.7776,118.2721 41.7597,118.3015 41.7775,118.3182 41.8287,118.3386 41.8481,118.3169 41.8781,118.2625 41.9275,118.2928 41.9344,118.3005 41.9744,118.2887 42.0029,118.2567 42.0086,118.2902 42.0474,118.2564 42.0881,118.2144 42.0797,118.2172 42.0543,118.1892 42.0317,118.155 42.0256,118.1517 42.0871,118.0886 42.1056,118.0981 42.1774,118.0493 42.1916,117.9664 42.2372,118.0513 42.2827,118.0518 42.3059,118.0218 42.3143,118.0023 42.3465,118.0238 42.3811,117.9996 42.4115,117.9521 42.4292,117.9208 42.4713,117.8625 42.5018,117.8618 42.5169,117.8317 42.5596,117.7993 42.5742,117.7992 42.6147,117.7781 42.6147,117.6969 42.5846,117.6209 42.5669,117.5636 42.5811,117.5479 42.6018,117.5226 42.5824,117.4829 42.5942,117.4292 42.5839,117.4132 42.5574,117.3732 42.536,117.4003 42.4882,117.4026 42.4684,117.3748 42.4579,117.3345 42.4579,117.2812 42.4774,117.1603 42.4636,117.0902 42.4807,117.0706 42.4593,117.0089 42.4521,116.9931 42.4247,116.9614 42.4241,116.9081 42.4001,116.8985 42.3849,116.8931 42.3128,116.9073 42.2523,116.9112 42.1989,116.9034 42.1896,116.8609 42.1908,116.8214 42.2003,116.7781 42.1978,116.8137 42.1532,116.8655 42.1266,116.8855 42.0982,116.8784 42.0251,116.8691 42.0069,116.7901 41.9737,116.7612 41.9919,116.7312 41.9899,116.7101 41.9593,116.7105 41.9397,116.6552 41.945,116.6333 41.9279,116.6 41.9333,116.581 41.9238,116.5402 41.9308,116.5291 41.951,116.4865 41.9796,116.4528 41.9483,116.4174 41.9378,116.4063 41.9615,116.4123 41.9865,116.3752 42.0063,116.323 42.0047,116.298 41.9708,116.2226 41.9356,116.2046 41.9034,116.205 41.8801,116.188 41.8591,116.1633 41.8712,116.1493 41.8587,116.1181 41.8648,116.0988 41.8301,116.122 41.8055,116.0845 41.7764,116.0005 41.7762,115.9949 41.8256,115.955 41.869,115.9302 41.9058,115.9141 41.9488,115.8789 41.9361,115.8289 41.9342,115.7619 41.8845,115.7242 41.89,115.7223 41.8685,115.6799 41.8651,115.6486 41.8436,115.6446 41.8262,115.5282 41.771,115.356 41.7157,115.3354 41.7175,115.3059 41.7008,115.3196 41.6721,115.3422 41.657,115.3351 41.6335,115.3602 41.5942,115.3062 41.5897,115.2887 41.6165,115.2621 41.6137,115.2504 41.578,115.1939 41.5699,115.1895 41.6014,115.14 41.6011,115.0794 41.6205,115.0645 41.6006,115.0288 41.5989,115.0157 41.6103,114.966 41.6124,114.875 41.6045,114.8975 41.6393,114.8946 41.7416,114.8894 41.7715,114.8628 41.8082,114.9173 41.8237,114.9319 41.8429,114.9054 41.8786,114.9141 41.9515,114.8983 41.9675,114.8992 42.0138,114.8565 42.0515,114.8562 42.0981,114.8173 42.1382,114.7891 42.1455,114.7806 42.1283,114.7476 42.1129,114.7068 42.1133,114.6643 42.1225,114.6334 42.1048,114.5916 42.1291,114.5116 42.1177,114.4652 42.0376,114.4754 42,114.5048 41.9788,114.4689 41.9526,114.4298 41.9425,114.3813 41.9506,114.3131 41.9232,114.3131 41.9025,114.2906 41.8714,114.2432 41.8353,114.2206 41.8254,114.1965 41.7895,114.2081 41.7557,114.2102 41.6837,114.2375 41.6219,114.22 41.6127,114.2355 41.5847,114.2183 41.5598,114.2413 41.5273,114.2073 41.5099,114.1757 41.5313,114.1373 41.527,114.0931 41.535,114.0774 41.5268,114.0329 41.5301,113.9697 41.5042,113.9422 41.4827,113.9232 41.4852,113.8717 41.4453,113.8643 41.4123,113.9223 41.4123,113.9394 41.3902,113.9288 41.3726,113.92 41.3234,113.9 41.2993,113.9416 41.2672,113.9604 41.2395,113.9877 41.2642,114.0069 41.2331,113.9951 41.1876,113.9325 41.1698,113.9078 41.171,113.8826 41.1213,113.8617 41.106,113.8195 41.0993,113.888 41.0453,113.9152 41.0325,113.9709 40.9783,113.9764 40.942,113.9971 40.942,114.0058 40.9193,114.0433 40.8847,114.0664 40.8546,114.0447 40.832,114.0511 40.8054,114.0995 40.7779,114.0949 40.741,114.0531 40.7172,114.0639 40.6799,114.0597 40.6386,114.0358 40.6133,114.0725 40.5781,114.0675 40.5396,114.0147 40.5195,113.9706 40.5239,113.9428 40.5159,113.8699 40.4503,113.8151 40.4991,113.7862 40.518,113.7796 40.4954,113.7446 40.4681,113.7243 40.4655,113.6334 40.4076,113.5515 40.3442,113.4321 40.3217,113.3611 40.3138,113.3084 40.321,113.2807 40.3707,113.2436 40.4118,113.2229 40.4013,113.1678 40.3934,113.1212 40.3778,113.0072 40.3614,112.8927 40.3283,112.8894 40.306,112.8507 40.2117,112.8416 40.2007,112.7982 40.1871,112.7455 40.1626,112.725 40.1646,112.676 40.1931,112.618 40.2376,112.5 40.269,112.4532 40.2975,112.4063 40.293,112.3532 40.2558,112.3016 40.2515,112.2825 40.2223,112.2851 40.2047,112.2271 40.1706,112.2194 40.1326,112.1784 40.0875,112.1555 40.0436,112.1348 40.0261,112.0716 39.9176,112.0363 39.8803,112.0011 39.8235,111.9596 39.7898,111.9663 39.7108,111.9514 39.6867,111.9166 39.662,111.931 39.6397,111.9239 39.609,111.8968 39.6146,111.871 39.6042,111.8301 39.6206,111.7767 39.5877,111.7125 39.6048,111.6902 39.6254,111.6369 39.643,111.6106 39.6375,111.5094 39.6613,111.4823 39.6583,111.4445 39.6415,111.423 39.6164,111.4342 39.5957,111.416 39.5415,111.4269 39.5191,111.4145 39.4997,111.3845 39.4922,111.358 39.4681,111.3476 39.4273,111.3247 39.4191,111.236 39.4278,111.1983 39.419,111.1671 39.4224,111.1339 39.4038,111.125 39.3653,111.1034 39.3545,111.0799 39.3791,111.0916 39.4,111.0462 39.4219,111.0528 39.444,111.0809 39.4577,111.1125 39.5125,111.1374 39.5253,111.1499 39.5666,111.1262 39.584,111.0952 39.5575,111.0357 39.5529,110.9823 39.5427,110.9537 39.5181,110.885 39.5074,110.8608 39.4902,110.8223 39.4379,110.7796 39.3892,110.7345 39.3507,110.7271 39.3077,110.6954 39.2664,110.6647 39.2768,110.625 39.2649,110.5812 39.2854,110.559 39.3138,110.5521 39.3517,110.5188 39.3814,110.4832 39.3527,110.4315 39.392,110.4142 39.3608,110.4226 39.3401,110.3826 39.3094,110.333 39.3422,110.249 39.4098,110.2404 39.4254,110.2049 39.4464,110.1839 39.4414,110.1421 39.4579,110.1173 39.4209,110.1267 39.3921,110.1531 39.3855,110.1804 39.3486,110.2088 39.282,110.0033 39.2081,109.9538 39.2117,109.9013 39.2695,109.8785 39.2624,109.8895 39.233,109.9534 39.1908,109.9376 39.1736,109.8856 39.1417,109.9227 39.1042,109.8923 39.1011,109.8698 39.1151,109.8422 39.1169,109.8084 39.0882,109.7526 39.055,109.6874 38.9836,109.6532 38.926,109.6437 38.8823,109.5677 38.82,109.539 38.8141,109.5058 38.8324,109.4464 38.789,109.4374 38.7715,109.4026 38.7415,109.3929 38.7133,109.3332 38.701,109.3205 38.6706,109.357 38.6217,109.3243 38.5997,109.2714 38.6222,109.1928 38.5541,109.1728 38.5192,109.1192 38.495,109.1146 38.4762,109.0846 38.4509,109.0477 38.432,109.0514 38.3929,108.9969 38.3561,108.9771 38.3026,108.9568 38.2681,108.9709 38.2477,108.9334 38.2073,108.9403 38.1714,108.9678 38.1446,109.0623 38.0705,109.0662 38.0304,109.0182 38.0021,109.0127 37.9789,108.9793 37.9638,108.9515 37.9297,108.923 37.9274,108.9098 37.9601,108.8457 38.0135,108.8344 38.0379,108.8113 38.0459,108.7818 38.0385,108.8267 37.9702,108.7839 37.9359,108.7874 37.8844,108.7806 37.8587,108.7913 37.7837,108.7767 37.7515,108.7864 37.6847,108.7597 37.6783,108.7214 37.6831,108.6984 37.666,108.6126 37.649,108.5382 37.6865,108.4731 37.6735,108.4554 37.6536,108.42 37.6448,108.3807 37.6452,108.327 37.6305,108.297 37.6374,108.2808 37.6563,108.2361 37.6615,108.2009 37.6479,108.1546 37.6201,108.1288 37.6168,108.0583 37.65,108.0179 37.6497,108.0095 37.6641,108.0209 37.6917,108.0052 37.7308,107.9584 37.7968,107.8978 37.8081,107.757 37.8494,107.7367 37.8448,107.681 37.8854,107.6484 37.8664,107.5568 37.8928,107.4968 37.934,107.4909 37.9441,107.4271 37.9351,107.4036 37.9502,107.43 37.9908,107.4193 38.0081,107.3909 38.0122,107.3255 38.0861,107.2314 38.1133,107.1833 38.1539,107.1334 38.1605,107.1096 38.1329,107.061 38.1382,107.042 38.1221,107.0052 38.1193,106.9531 38.1268,106.8435 38.1597,106.764 38.1776,106.6968 38.2148,106.5703 38.2563,106.4764 38.317,106.597 38.3878,106.6452 38.4728,106.6535 38.6105,106.6763 38.6479,106.7047 38.7178,106.7497 38.7472,106.8039 38.8204,106.8761 38.8849,106.9541 38.949,106.9644 39.0054,106.9631 39.0529,106.9275 39.0754,106.866 39.0902,106.8414 39.1228,106.8409 39.147,106.8124 39.2147,106.7862 39.2435,106.8018 39.2726,106.8021 39.3171,106.7941 39.3469,106.7756 39.3709,106.7439 39.3905,106.6751 39.3555,106.6414 39.3567,106.5978 39.3753,106.5591 39.3287,106.5291 39.3076,106.5032 39.2697,106.4224 39.2869,106.3032 39.2777,106.2709 39.2667,106.2779 39.2291,106.2757 39.1934,106.2911 39.1641,106.2827 39.1433,106.2487 39.1312,106.2 39.1345,106.1444 39.1538,106.1191 39.1237,106.0773 39.0486,106.0844 39.0086,106.0557 38.9665,106.0001 38.9395,105.9986 38.9262,105.9681 38.9012,105.9881 38.8556,105.9653 38.8425,105.8931 38.7782,105.9022 38.7305,105.8802 38.7125,105.8902 38.6932,105.8493 38.6429,105.8512 38.6142,105.87 38.5915,105.8552 38.5775,105.8573 38.5247,105.8314 38.4744,105.8458 38.4427,105.8272 38.4367,105.8301 38.3857,105.8166 38.3606,105.8559 38.3143,105.8601 38.2882,105.837 38.2318,105.8215 38.2188,105.7734 38.206,105.7579 38.1203,105.7789 38.074,105.8349 38.0155,105.8412 38.002,105.7981 37.9552,105.7891 37.9076,105.8054 37.8697,105.7989 37.8513,105.7448 37.7991,105.6698 37.7767,105.6364 37.782,105.6145 37.7597,105.6122 37.7197,105.5999 37.7067,105.5473 37.6993,105.4461 37.6981,105.3678 37.7138,105.2647 37.6858,105.2366 37.6713,105.1722 37.6642,105.1123 37.6284,105.0248 37.582,104.8685 37.5682,104.7998 37.5408,104.6209 37.525,104.4345 37.5192,104.4195 37.5156,104.4081 37.469,104.3672 37.4624,104.3427 37.4464,104.3219 37.4474,104.2853 37.4241,104.1863 37.4059,104.1708 37.4118,104.0765 37.4704,103.9313 37.5741,103.8686 37.6071,103.8339 37.6513,103.6741 37.7822,103.6385 37.7936,103.3985 37.8607,103.3796 37.9607,103.3647 37.9793,103.3683 38.0117,103.3593 38.0393,103.3672 38.0885,103.4444 38.1224,103.5068 38.1422,103.532 38.1556,103.5092 38.269,103.463 38.3503,103.4127 38.4025,103.8394 38.6385,103.8617 38.6575,103.9907 38.8419,104.0281 38.8894,104.162 38.938,104.1945 38.9901,104.1868 39.044,104.2008 39.0899,104.1685 39.1582,104.046 39.2935,104.0693 39.3522,104.087 39.417,103.9668 39.4533,103.93 39.4584,103.8388 39.46,103.6277 39.3924,103.5069 39.3702,103.3463 39.3323,103.3236 39.3196,103.1769 39.2086,103.1327 39.1968,103.0888 39.1644,103.0093 39.0981,102.9788 39.1005,102.587 39.1756,102.54 39.2055,102.4499 39.2531,102.3507 39.2298,102.2727 39.1867,102.0641 39.1449,102.0101 39.1259,101.8849 39.1076,101.8297 39.0933,101.9243 39,101.9445 38.9928,102.0688 38.8871,102.0143 38.8562,101.9391 38.806,101.8719 38.7332,101.7822 38.6657,101.6725 38.6908,101.6501 38.6855,101.6047 38.6508,101.5567 38.7143,101.4116 38.763,101.3255 38.7775,101.3249 38.806,101.3394 38.8247,101.3315 38.8469,101.2594 38.8519,101.2347 38.8654,101.2324 38.9093,101.1944 38.9458,101.2192 39.0225,101.1351 38.9877,101.106 38.9718,100.9652 38.9524,100.9707 38.9966,100.9623 39.0078,100.8966 39.037,100.8717 39.0042,100.834 39.0249,100.8223 39.049,100.8296 39.0764,100.8633 39.1071,100.8412 39.1988,100.842 39.4045,100.8345 39.4084,100.7382 39.4011,100.7062 39.4036,100.6224 39.3865,100.4964 39.3991,100.4977 39.4776,100.4338 39.4865,100.323 39.5084,100.2982 39.5722,100.3081 39.6087,100.2471 39.6825,100.1773 39.6893,100.1108 39.7056,100.0377 39.7544,99.9527 39.7688,99.8966 39.7877,99.8168 39.8604,99.7115 39.8763,99.6771 39.8866,99.4658 39.8741,99.531 39.8907,99.5596 39.9067,99.6244 39.929,99.6965 39.961,99.7449 39.9915,99.7498 40.0071,99.8391 40.01,99.869 40.0226,99.9212 40.0597,99.9372 40.0839,99.95 40.1411,99.9791 40.1838,100.0339 40.2152,100.0975 40.2444,100.1465 40.2774,100.143 40.4364,100.1348 40.5433,100.204 40.6166,100.2247 40.6804,100.2011 40.7858,100.1196 40.8985,100.052 40.9324,99.9256 40.9265,99.6674 40.9383,99.5629 40.8534,99.352 40.8594,99.1745 40.8571,99.1716 40.7595,99.1327 40.7275,99.0957 40.6748,99.0188 40.698,98.9636 40.79,98.7876 40.7166,98.7767 40.678,98.7912 40.6356,98.7635 40.6301,98.706 40.6594,98.6809 40.7052,98.6629 40.7659,98.567 40.7485,98.6252 40.6845,98.3372 40.5665,98.321 40.9202,98.2465 40.9383,98.1837 40.9865,98.135 41.0029,97.9673 41.1002,97.6298 41.4361,97.6152 41.4775,97.6637 41.519,97.8431 41.6542,97.8438 41.6573,97.6452 42.0008,97.5182 42.2116,97.2588 42.6319,97.1698 42.7848))&quot;</value>
+                <value>45.9377</value>
+                <value>119.0298</value>
+              </tuple>
+            </tuple-reference>
+          </mark-label>
+        </mark-labels>
+        <annotations>
+          <annotation class='area' id='0' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontcolor='#000000'>黑龙江</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='14051236.62112171'>
+                  <node-reference>
+                    <axis>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Longitude (generated)]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='6031481.9084675927'>
+                  <node-reference>
+                    <axis>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='126.22440617533574' v='47.544950234026615' />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='14792121.448770661'>
+                  <node-reference>
+                    <axis>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Longitude (generated)]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='5875021.7650789758'>
+                  <node-reference>
+                    <axis>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='132.87988781982884' v='46.587624616641889' />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+          <annotation class='area' id='1' text-pinx='0.5' text-piny='0.5' text-width-delta='-18'>
+            <formatted-text>
+              <run fontcolor='#1b1b1b'>内蒙古</run>
+            </formatted-text>
+            <top-left>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='12799555.421615409'>
+                  <node-reference>
+                    <axis>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Longitude (generated)]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='5644933.3189192452'>
+                  <node-reference>
+                    <axis>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='114.98036265172009' v='45.148520097607346' />
+              </visual-coordinate>
+            </top-left>
+            <bottom-right>
+              <visual-coordinate class='axis'>
+                <x-coord axis-value='13402387.175789401'>
+                  <node-reference>
+                    <axis>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Longitude (generated)]</axis>
+                  </node-reference>
+                </x-coord>
+                <y-coord axis-value='5474667.8687610431'>
+                  <node-reference>
+                    <axis>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]</axis>
+                  </node-reference>
+                </y-coord>
+                <page-reference />
+                <projection name='EPSG:3857' u='120.39569243699087' v='44.059585868502609' />
+              </visual-coordinate>
+            </bottom-right>
+            <text x='0.5' y='0.5' />
+          </annotation>
+        </annotations>
+      </table>
+      <simple-id uuid='{B61D1B16-1E38-4D79-A801-919DD5121C39}' />
+    </worksheet>
+    <worksheet name='各省售电量多维地图'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='示例数据 (2014年各省市售电量)' name='federated.0b1qrvc0rkd7yb17iqzj2118hzd6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0b1qrvc0rkd7yb17iqzj2118hzd6'>
+            <column-instance column='[统计周期]' derivation='Month' name='[mn:统计周期:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[用电类别]' derivation='None' name='[none:用电类别:nk]' pivot='key' type='nominal' />
+            <column-instance column='[省市]' derivation='None' name='[none:省市:nk]' pivot='key' type='nominal' />
+            <column-instance column='[统计周期]' derivation='Quarter' name='[qr:统计周期:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[当期值]' derivation='Sum' name='[sum:当期值:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[统计周期]' derivation='Year' name='[yr:统计周期:ok]' pivot='key' type='ordinal' />
+            <column datatype='real' name='[当期值]' role='measure' type='quantitative' />
+            <column datatype='string' name='[用电类别]' role='dimension' type='nominal' />
+            <column datatype='string' name='[省市]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;冀北&quot;' value='&quot;河北省&quot;' />
+                <semantic-value key='&quot;龙江&quot;' value='&quot;黑龙江省&quot;' />
+                <semantic-value key='&quot;蒙东&quot;' value='&quot;内蒙古&quot;' />
+              </semantic-values>
+            </column>
+            <column datatype='date' name='[统计周期]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:用电类别:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;大工业&quot;</bucket>
+              <bucket>&quot;商业&quot;</bucket>
+              <bucket>&quot;电厂直供&quot;</bucket>
+              <bucket>&quot;趸售&quot;</bucket>
+              <bucket>&quot;非居民&quot;</bucket>
+              <bucket>&quot;非普工业&quot;</bucket>
+              <bucket>&quot;居民&quot;</bucket>
+              <bucket>&quot;农业&quot;</bucket>
+              <bucket>&quot;其他&quot;</bucket>
+              <bucket>&quot;汇总&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:用电类别:nk]' value='48' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:当期值:qk]' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+            <format attr='font-size' value='8' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='admin-0-boundaries-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute' value='false' />
+            <format attr='enabled' id='admin-0-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-1st-tier' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:当期值:qk]' />
+              <lod column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]' />
+              <geometry column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>(([federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[yr:统计周期:ok] / ([federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[qr:统计周期:ok] / [federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[mn:统计周期:ok])) * [federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)])</rows>
+        <cols>([federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:用电类别:nk] * [federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Longitude (generated)])</cols>
+      </table>
+      <simple-id uuid='{AEEFC25E-DE42-4E98-90C7-4D8D47C8E2A7}' />
+    </worksheet>
+    <worksheet name='各省市售电量混合地图'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='示例数据 (2014年各省市售电量)' name='federated.0b1qrvc0rkd7yb17iqzj2118hzd6' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0b1qrvc0rkd7yb17iqzj2118hzd6'>
+            <column-instance column='[省市]' derivation='None' name='[none:省市:nk]' pivot='key' type='nominal' />
+            <column-instance column='[同期值]' derivation='Sum' name='[sum:同期值:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[同期累计值]' derivation='Sum' name='[sum:同期累计值:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[当期值]' derivation='Sum' name='[sum:当期值:qk]' pivot='key' type='quantitative' />
+            <column datatype='real' name='[同期值]' role='measure' type='quantitative' />
+            <column datatype='real' name='[同期累计值]' role='measure' type='quantitative' />
+            <column datatype='real' name='[当期值]' role='measure' type='quantitative' />
+            <column datatype='string' name='[省市]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;冀北&quot;' value='&quot;河北省&quot;' />
+                <semantic-value key='&quot;龙江&quot;' value='&quot;黑龙江省&quot;' />
+                <semantic-value key='&quot;蒙东&quot;' value='&quot;内蒙古&quot;' />
+              </semantic-values>
+            </column>
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]' field-type='quantitative' fold='true' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:当期值:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-diverging'>
+                <color>#00aaff</color>
+                <color>#16affb</color>
+                <color>#2db4f8</color>
+                <color>#42b9f4</color>
+                <color>#57bef1</color>
+                <color>#6cc2ed</color>
+                <color>#7fc6ea</color>
+                <color>#92cae6</color>
+                <color>#a5cee3</color>
+                <color>#b7d2df</color>
+                <color>#c8d5dc</color>
+                <color>#d9d9d9</color>
+                <color>#a9cee6</color>
+                <color>#96c2e1</color>
+                <color>#88b6d9</color>
+                <color>#7aabd0</color>
+                <color>#6d9fc6</color>
+                <color>#6192bc</color>
+                <color>#5787b3</color>
+                <color>#4c7ca9</color>
+                <color>#42709e</color>
+                <color>#386592</color>
+                <color>#2e5a87</color>
+              </color-palette>
+            </encoding>
+            <encoding attr='color' field='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:同期累计值:qk]' palette='red_green_diverging_10_0' reverse='true' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <lod column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:当期值:qk]' />
+              <lod column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]' />
+              <geometry column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:同期累计值:qk]' />
+              <size column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:同期值:qk]' />
+              <text column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]' />
+              <lod column='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#59a14f' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)] + [federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Latitude (generated)])</rows>
+        <cols>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{0C4AE832-1BDD-4BC0-9497-EBBA5F4DF85A}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='各省售电量填充地图'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:当期值:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{85739AC7-7C6A-4DF3-8BEF-59DAA0FAFD35}' />
+    </window>
+    <window class='worksheet' name='各省售电量多维地图'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:当期值:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:用电类别:nk]</field>
+            <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]</field>
+            <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[yr:统计周期:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6CE737D1-50EE-45F9-8172-C6E342C708FE}' />
+    </window>
+    <window class='worksheet' maximized='true' name='各省市售电量混合地图'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:当期值:qk]' type='color' />
+            <card pane-specification-id='2' param='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:同期值:qk]' type='size' />
+            <card pane-specification-id='2' param='[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:同期累计值:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[none:省市:nk]</field>
+            <field>[federated.0b1qrvc0rkd7yb17iqzj2118hzd6].[sum:同期累计值:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{D4240F05-03F1-48BD-BDB1-D33A1D341367}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='各省售电量填充地图' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='各省售电量多维地图' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='各省市售电量混合地图' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
